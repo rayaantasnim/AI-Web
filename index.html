@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Neural-Primitives : Enterprise Postgraduate AI/ML Engine & Tensor
+      Telemetry Framework
+    </title>
+
+    <!-- Global SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Neural-Primitives is an enterprise-grade, postgraduate-tier AI/ML framework bridging raw PyTorch multi-dimensional tensor operations, vLLM inference, and real-time telemetry streaming over WebSocket/SSE."
+    />
+    <meta
+      name="keywords"
+      content="Neural-Primitives, PyTorch, vLLM, GraphRAG, Mechanistic Interpretability, Test-Time Compute, Flow Matching, PEFT, LangGraph, TensorRT"
+    />
+    <meta name="author" content="Rayaan Tasnim" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github.com/rayaantasnim/Artificial-Intelligence"
+    />
+    <meta
+      property="og:title"
+      content="Neural-Primitives | Enterprise AI/ML Framework"
+    />
+    <meta
+      property="og:description"
+      content="Postgraduate-tier AI/ML repository bridging raw tensor operations and real-time interactive telemetry with zero-copy memory transfers and WebSocket/SSE streaming."
+    />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://github.com/rayaantasnim/Artificial-Intelligence"
+    />
+    <meta
+      name="twitter:title"
+      content="Neural-Primitives | Enterprise AI/ML Framework"
+    />
+    <meta
+      name="twitter:description"
+      content="Advanced neural orchestration, mechanistic interpretability, and high-velocity tensor computation engine built on PyTorch, vLLM, FastAPI, and ONNX Runtime."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200"
+    />
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome v6 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GSAP & ScrollTrigger Plugin CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://github.io",
+            "url": "https://rayaantasnim.github.io/Artificial-Intelligence",
+            "name": "Neural-Primitives",
+            "description": "Enterprise Postgraduate AI/ML Engine & Tensor Telemetry Framework"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://github.io",
+            "url": "https://rayaantasnim.github.io/Artificial-Intelligence",
+            "name": "Neural-Primitives: Enterprise AI/ML Framework & Interactive Telemetry Engine",
+            "isPartOf": {
+              "@id": "https://github.io"
+            },
+            "mainEntity": {
+              "@type": "SoftwareApplication",
+              "name": "Neural-Primitives",
+              "description": "An enterprise-grade, postgraduate-tier AI/ML repository bridging raw multi-dimensional tensor operations executed on distributed GPU clusters and real-time, human-in-the-loop interactive telemetry paradigms over WebSocket and SSE.",
+              "applicationCategory": "DeveloperApplication, ArtificialIntelligenceApplication",
+              "operatingSystem": "Cross-platform (Linux / NVIDIA CUDA / Python 3)",
+              "downloadUrl": "https://github.com/rayaantasnim/Artificial-Intelligence",
+              "author": {
+                "@type": "Person",
+                "name": "Rayaan Tasnim"
+              },
+              "copyrightHolder": {
+                "@type": "Organization",
+                "name": "IDAI Universe"
+              },
+              "hasPart": [
+                {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Interactive Alignment & Real-time Reinforcement Learning",
+                  "description": "Executes real-time Proximal Policy Optimization (PPO) and Direct Preference Optimization (DPO) tensor alignment routines over streaming WebSocket feedback channels.",
+                  "programmingLanguage": "Python"
+                },
+                {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Multi Agent Orchestration & Mixed-Initiative User Interfaces",
+                  "description": "Coordinates dynamic state transitions across multi-agent DAG graphs using LangGraph, FastAPI, and async state streaming.",
+                  "programmingLanguage": "Python"
+                },
+                {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Test-Time Compute & Advanced Reasoning Architectures",
+                  "description": "Implements MCTS rollouts, self-consistency verifiers, and dynamic compute allocation at inference time.",
+                  "programmingLanguage": "Python"
+                },
+                {
+                  "@type": "SoftwareSourceCode",
+                  "name": "Advanced GraphRAG & Context-Aware Structural Visualizations",
+                  "description": "Combines NetworkX topology extraction with vector embeddings for context-aware structural retrieval and sub-graph analysis.",
+                  "programmingLanguage": "Python"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- STICKY NAVIGATION BAR -->
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="#" class="brand-logo">
+          <span class="dot"></span> Neural-Primitives
+        </a>
+
+        <!-- Pure CSS Hamburger Trigger -->
+        <button
+          class="hamburger"
+          id="hamburger-trigger"
+          aria-label="Toggle Navigation"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- GSAP OVERLAY NAVIGATION CANVAS -->
+    <div class="nav-overlay" id="nav-overlay">
+      <button
+        class="close-btn"
+        id="close-trigger"
+        aria-label="Close Navigation"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h1 class="navbar-heading">Navigation Topology</h1>
+
+      <ul class="overlay-links">
+        <li><a href="#hero" class="nav-link">01. Architecture Overview</a></li>
+        <li>
+          <a href="#pipelines" class="nav-link">02. Infrastructure Modules</a>
+        </li>
+        <li>
+          <a href="#characteristics" class="nav-link">03. Ten Engine Pillars</a>
+        </li>
+        <li>
+          <a href="#conclusion" class="nav-link">04. Synthesis & Repository</a>
+        </li>
+      </ul>
+
+      <a
+        href="https://github.com/rayaantasnim/Artificial-Intelligence"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+        <i class="fa-brands fa-github"></i> View GitHub Repository
+      </a>
+    </div>
+
+    <!-- HERO BANNER SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-block">
+          <div class="hero-badge">
+            <i class="fa-solid fa-brain"></i> Enterprise Postgraduate AI Engine
+          </div>
+          <h1>
+            Neural-Primitives: Postgraduate AI & Tensor Telemetry Framework
+          </h1>
+          <p>
+            Neural-Primitives is an enterprise-grade, postgraduate-tier AI/ML
+            framework engineered to bridge the foundational gap between raw
+            multi-dimensional tensor operations on distributed GPU clusters and
+            real-time, human-in-the-loop interactive telemetry paradigms. By
+            synthesizing asynchronous FastAPI backends with state-of-the-art
+            PyTorch tensor pipelines, vLLM inference engines, LangGraph agentic
+            topologies, and NetworkX graph analyzers, the framework empowers
+            engineers to inspect, manipulate, and optimize complex deep learning
+            workflows dynamically. Built with zero-copy memory transfers, custom
+            gradient accumulation hooks, and high-throughput WebSocket/SSE
+            streams, Neural-Primitives serves as the definitive reference
+            implementation for next-generation autonomous systems.
+          </p>
+          <div
+            style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem"
+          >
+            <a href="#pipelines" class="btn btn-primary">
+              Explore Core Modules <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a
+              href="https://github.com/rayaantasnim/Artificial-Intelligence"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              <i class="fa-brands fa-github"></i> Repository Access
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img
+            src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Neural Architecture Visual"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE PIPELINE ARCHITECTURES (VERTICAL LAYOUT) -->
+    <section class="pipeline-section" id="pipelines">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">System Design</span>
+          <h2>Four Primary Architectural Clusters</h2>
+          <p>
+            A cohesive production stack combining low-level PyTorch tensor
+            manipulation with high-level agentic orchestration, graph retrieval,
+            and real-time streaming interfaces.
+          </p>
+        </div>
+
+        <div class="pipeline-cards">
+          <!-- CARD 01 -->
+          <div class="pipeline-card">
+            <div class="pipeline-content">
+              <span class="pipeline-number">FACILITY 01</span>
+              <h3>Reinforcement Alignment & RLHF Engine</h3>
+              <p>
+                Executes continuous human-in-the-loop policy calibration
+                combining Direct Preference Optimization (DPO), Proximal Policy
+                Optimization (PPO), and Group Relative Policy Optimization
+                (GRPO). The facility streams reward metrics, advantage vector
+                distributions, and KL-divergence thresholds in real time over
+                bidirectional WebSocket channels. By embedding custom loss hooks
+                directly into PyTorch computational graphs, the system enables
+                fine-grained trajectory steering and preference calibration with
+                zero process restart overhead.
+              </p>
+            </div>
+            <div class="pipeline-image">
+              <img
+                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Alignment Analytics Core"
+              />
+            </div>
+          </div>
+
+          <!-- CARD 02 -->
+          <div class="pipeline-card">
+            <div class="pipeline-content">
+              <span class="pipeline-number">FACILITY 02</span>
+              <h3>Multi-Agent DAG Orchestration Grid</h3>
+              <p>
+                Coordinates asynchronous multi-agent workflows using LangGraph,
+                Einops tensor reshapes, and FastAPI event loops. The engine
+                manages dynamic DAG state propagation, inter-agent message
+                routing, and parallel tool invocation across distributed node
+                clusters. Featuring real-time execution tracing and memory
+                checkpointing, this facility guarantees fault-tolerant token
+                generation and deterministic agent task execution across complex
+                reasoning chains.
+              </p>
+            </div>
+            <div class="pipeline-image">
+              <img
+                src="https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Multi Agent Topology"
+              />
+            </div>
+          </div>
+
+          <!-- CARD 03 -->
+          <div class="pipeline-card">
+            <div class="pipeline-content">
+              <span class="pipeline-number">FACILITY 03</span>
+              <h3>Mechanistic Interpretability Suite</h3>
+              <p>
+                Provides deep internal inspection into transformer activations
+                via residual stream decomposition, causal mediation analysis,
+                and sparse autoencoder (SAE) feature steering. Engineers can
+                pinpoint specific attention heads, trace polysemantic features,
+                and inject vector shifts dynamically to alter downstream model
+                behavior without modifying base weights, achieving absolute
+                explainability across multi-billion parameter architectures.
+              </p>
+            </div>
+            <div class="pipeline-image">
+              <img
+                src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Interpretability Circuit Visual"
+              />
+            </div>
+          </div>
+
+          <!-- CARD 04 -->
+          <div class="pipeline-card">
+            <div class="pipeline-content">
+              <span class="pipeline-number">FACILITY 04</span>
+              <h3>High-Velocity Edge & vLLM Serving Pipeline</h3>
+              <p>
+                Delivers sub-millisecond inference latencies by combining ONNX
+                Runtime, TensorRT execution providers, and vLLM paged-attention
+                memory management. The pipeline optimizes memory bandwidth via
+                zero-copy FP16/INT4 quantization, static CUDA graph capture, and
+                continuous batching over Server-Sent Events (SSE). This ensures
+                optimal token throughput across enterprise edge node arrays and
+                client-side hardware setups.
+              </p>
+            </div>
+            <div class="pipeline-image">
+              <img
+                src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Edge Server Acceleration"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEN CHARACTERISTICS SECTIONS -->
+    <section class="characteristics-section" id="characteristics">
+      <div class="container">
+        <div class="section-header">
+          <span class="tag">Deep Dive</span>
+          <h2>Ten Core Production Engineering Modules</h2>
+          <p>
+            Comprehensive technical breakdowns detailing the 10 production
+            modules engineered across the Neural-Primitives framework codebase.
+          </p>
+        </div>
+
+        <!-- ROW 01 -->
+        <div class="char-row">
+          <div class="char-text">
+            <div class="char-icon">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            <h3>
+              01. Interactive Alignment & Real-time Reinforcement Learning
+            </h3>
+            <p>
+              The
+              <code
+                >Interactive Alignment & Real-time Reinforcement
+                Learning.py</code
+              >
+              module provides a production-grade infrastructure for
+              human-in-the-loop policy tuning using Direct Preference
+              Optimization (DPO), Proximal Policy Optimization (PPO), and Group
+              Relative Policy Optimization (GRPO). Integrated directly with
+              PyTorch computational graphs, the module streams loss functions,
+              reward distributions, and KL-divergence penalties over high-speed
+              WebSocket channels. By eliminating the need for static offline
+              datasets, researchers can dynamically steer model behavior, adjust
+              reward weight vectors, and observe immediate shifts in output
+              probability distributions in real time without interrupting
+              underlying GPU execution cycles.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Interactive Alignment Architecture"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 02 -->
+        <div class="char-row reverse">
+          <div class="char-text">
+            <div class="char-icon"><i class="fa-solid fa-sitemap"></i></div>
+            <h3>02. Multi Agent Orchestration & Mixed-Initiative Interfaces</h3>
+            <p>
+              Driven by
+              <code
+                >Multi Agent Orchestration & Mixed-Initiative User
+                Interfaces.py</code
+              >, this architecture manages complex multi-agent interactions via
+              LangGraph directed acyclic graphs (DAGs) and Einops dynamic tensor
+              reshaping. Agents exchange state updates, tool calls, and
+              execution traces asynchronously over FastAPI endpoints. The module
+              features fault-tolerant state rollback, mixed-initiative user
+              interventions, and memory checkpointing, enabling autonomous agent
+              teams to divide complex analytical tasks, reconcile conflicting
+              sub-agent outputs, and maintain coherent system context across
+              extended operational horizons.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Multi Agent System Graph"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 03 -->
+        <div class="char-row">
+          <div class="char-text">
+            <div class="char-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3>03. Test-Time Compute & Advanced Reasoning Architectures</h3>
+            <p>
+              Implemented in
+              <code
+                >Test-Time Compute & Advanced Reasoning Architectures.py</code
+              >, this module scales model intelligence dynamically at inference
+              time by substituting fixed forward passes with Monte Carlo Tree
+              Search (MCTS), beam search expansion, and self-consistency
+              validation loops. The system computes dynamic token budget
+              allocations based on query complexity, pruning unpromising
+              reasoning trajectories while deepening search trees on difficult
+              mathematical and algorithmic prompts. The resulting
+              compute-optimal reasoning framework elevates problem-solving
+              precision while benchmarking energy consumption against standard
+              greedy decoding strategies.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Test Time Compute Visual"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 04 -->
+        <div class="char-row reverse">
+          <div class="char-text">
+            <div class="char-icon">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <h3>
+              04. Advanced GraphRAG & Context-Aware Structural Visualizations
+            </h3>
+            <p>
+              The
+              <code
+                >Advanced GraphRAG & Context-Aware Structural
+                Visualizations.py</code
+              >
+              script unifies dense vector retrieval with topological graph
+              search. Leveraging NetworkX graph modeling alongside
+              high-dimensional embedding similarity matrices, the engine
+              constructs hierarchical knowledge graphs from unstructured
+              enterprise texts. It extracts entity-relation triplets, calculates
+              PageRank node centrality scores, and executes sub-graph retrievals
+              to eliminate hallucination in RAG pipelines. Interactive telemetry
+              streams allow users to inspect topological cluster density and
+              query traversal paths visually in real time.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="GraphRAG Topology Display"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 05 -->
+        <div class="char-row">
+          <div class="char-text">
+            <div class="char-icon"><i class="fa-solid fa-photo-film"></i></div>
+            <h3>
+              05. Multi Modal Interaction & Streaming Video Audio Tokenization
+            </h3>
+            <p>
+              In
+              <code
+                >Multi Modal Interaction & Streaming Video Audio
+                Tokenization.py</code
+              >, the framework processes synchronous multi-modal inputs by
+              tokenizing interleaved streaming video frames and raw audio
+              signals into unified transformer embeddings. Built with
+              low-latency PyTorch tensor encoders, the pipeline projects vision,
+              acoustic, and textual inputs into a shared latent representation
+              space. The streaming architecture handles temporal synchronization
+              and dynamic frame-dropping under network jitter, enabling
+              real-time voice, vision, and text understanding for interactive
+              multimodal agents.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Multimodal Streaming Processor"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 06 -->
+        <div class="char-row reverse">
+          <div class="char-text">
+            <div class="char-icon">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h3>
+              06. Mechanistic Interpretability & Feature Steering Interfaces
+            </h3>
+            <p>
+              The
+              <code
+                >Mechanistic Interpretability & Feature Steering
+                Interfaces.py</code
+              >
+              suite opens the black box of deep neural networks through residual
+              stream activation patching, causal mediation analysis, and Sparse
+              Autoencoder (SAE) feature isolation. By exposing internal layer
+              activations over SSE connections, engineers can monitor individual
+              monosemantic features and inject directional steering vectors
+              during the forward pass. This intervention capability allows
+              precise control over model tone, bias, and reasoning paths without
+              altering underlying model weights or requiring re-training loops.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Mechanistic Circuit Analysis"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 07 -->
+        <div class="char-row">
+          <div class="char-text">
+            <div class="char-icon">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3>
+              07. Efficient Parameter Fine-Tuning (PEFT) via Interaction
+              Analytics
+            </h3>
+            <p>
+              Encapsulated in
+              <code
+                >Efficient Parameter Fine-Tuning (PEFT) via Interaction
+                Analytics.py</code
+              >, this module provides dynamic Parameter-Efficient Fine-Tuning
+              using Low-Rank Adaptation (LoRA), QLoRA, and Prefix Tuning. The
+              system monitors user interaction telemetry, loss convergence
+              curves, and gradient norms to dynamically trigger rank allocation
+              across specialized attention matrices. By restricting updates to
+              low-rank adapter layers while freezing base parameters in 4-bit
+              precision, the framework reduces VRAM footprints by up to 80%
+              while preserving base model knowledge.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="PEFT Adapter Architecture"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 08 -->
+        <div class="char-row reverse">
+          <div class="char-text">
+            <div class="char-icon">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <h3>
+              08. Low-Latency Edge Inference & Client-Side GPU Acceleration
+            </h3>
+            <p>
+              The
+              <code
+                >Low-Latency Edge Inference & Client-Side GPU
+                Acceleration.py</code
+              >
+              pipeline focuses on enterprise edge deployments by leveraging ONNX
+              Runtime, TensorRT, and WebAssembly execution targets. Utilizing
+              FP16 and INT8 quantization alongside static CUDA graph execution,
+              the module eliminates framework kernel dispatch overhead.
+              Real-time telemetry tracks memory bandwidth usage, token latency
+              distribution (TTFT and ITL), and GPU power consumption, ensuring
+              maximum token-per-second throughput across both edge server nodes
+              and consumer hardware setups.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Edge Hardware Acceleration"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 09 -->
+        <div class="char-row">
+          <div class="char-text">
+            <div class="char-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>09. Real-Time Guardrailing & Safe Interactive Intervention</h3>
+            <p>
+              Architected in
+              <code
+                >Real-Time Guardrailing & Safe Interactive Intervention.py</code
+              >, this security layer enforces real-time content moderation,
+              prompt injection detection, and policy compliance. Operating
+              inline with vLLM token generation streams, the engine scans output
+              probability vectors and token logits for harmful content patterns
+              or safety violations. When a rule breach is detected, the
+              guardrail triggers an immediate token replacement or stream
+              interruption mechanism in under 5 milliseconds, delivering
+              enterprise-grade safety without increasing end-to-end user
+              latency.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Real Time Guardrailing Engine"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 10 -->
+        <div class="char-row reverse">
+          <div class="char-text">
+            <div class="char-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>
+              10. Flow Matching & Interactive Generative Media Manipulation
+            </h3>
+            <p>
+              The
+              <code
+                >Flow Matching & Interactive Generative Media
+                Manipulation.py</code
+              >
+              module implements state-of-the-art continuous-time flow matching
+              and diffusion trajectory solvers for generative media generation.
+              Moving beyond conventional stochastic differential equations
+              (SDEs), flow matching constructs straight ODE vector fields that
+              accelerate sampling speed while enhancing sample quality. The
+              interactive interface allows users to manipulate latent velocity
+              vectors on the fly, performing precise trajectory interpolation,
+              style blending, and zero-shot media editing in real time.
+            </p>
+          </div>
+          <div class="char-img">
+            <div class="char-img-wrapper">
+              <img
+                src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Flow Matching Generative Trajectory"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCLUSION SECTION -->
+    <section class="conclusion-section" id="conclusion">
+      <div class="container">
+        <div class="conclusion-box">
+          <div class="conclusion-text">
+            <h2>Redefining Enterprise AI Engineering & Neural Orchestration</h2>
+            <p>
+              Neural-Primitives represents a complete, postgraduate-tier AI/ML
+              reference architecture that bridges theoretical deep learning and
+              production-grade engineering. By uniting high-performance PyTorch
+              tensor execution, vLLM paged attention, LangGraph agentic
+              topologies, and real-time WebSocket/SSE telemetry streams into a
+              single codebase, the repository provides the foundational tools
+              required to build, inspect, steer, and deploy next-generation
+              artificial intelligence systems. Explore the open-source code, run
+              the interactive modules, and accelerate your enterprise AI
+              development today.
+            </p>
+            <div style="margin-top: 2rem">
+              <a
+                href="https://github.com/rayaantasnim/Artificial-Intelligence"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                <i class="fa-brands fa-github"></i> Access Repository on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="conclusion-img-wrapper">
+            <img
+              src="https://images.pexels.com/photos/1181373/pexels-photo-1181373.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="AI Systems Integration Team"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINIMALISTIC FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p class="footer-author">Authorized by Rayaan Tasnim with precision</p>
+        <p>© Project Neural-Primitives 2026; All rights reserved</p>
+        <span class="footer-brand-tag">Powered by IDAI Universe</span>
+      </div>
+    </footer>
+
+    <!-- INTERACTIVITY & GSAP SCROLLTRIGGER INTERACTION LAYER -->
+    <script src="script.js"></script>
+  </body>
+</html>
